@@ -1,0 +1,83 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Large screen and main styles*/
+
+header > .menu_title{
+    text-align: center;
+    font-size: 175%;
+    margin: 30px;
+}
+
+section{
+    width: 100%;
+    padding: 0 0 0 30px;
+    display: flex;
+}
+
+section > .menu_item{
+    flex-basis: 33.33%;
+    border: 2px solid #000000;
+    margin-right: 30px ;
+    background-color: #999999;
+    float: left;
+}
+
+section > .menu_item > .item_name{
+    border-bottom: 2px solid #000000;
+    border-left: 2px solid #000000;
+    width: 150px;
+    text-align: center;
+    font-size: 125%;
+    float: right;
+}
+
+.menu_item > .chicken{
+    background-color: #d39898;    
+}
+
+.menu_item > .beef{
+    background-color: #c14543;
+    color: #ffffff;
+}
+
+.menu_item > .sushi{
+    background-color: #e5d097;
+}
+
+section > .menu_item > .item_description{
+    clear: right;
+    margin: 40px 15px 15px 15px;
+}
+
+/* Medium screen */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    section{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .chicken_item, .beef_item{
+        flex: auto;
+    }
+    .sushi_item{
+        flex: 1 0 50%;
+        margin-top: 30px;
+    }
+}
+
+/* Small screen */
+
+@media (max-width: 767px) {
+    section{
+        flex-direction: column;
+    }
+    
+    .beef_item, .sushi_item{
+        margin-top: 30px;
+    }
+}
