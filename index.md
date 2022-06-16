@@ -1,6 +1,6 @@
 ## Welcome
 
-1. [Module 2 - Assignment](https://google.com)
+1. [Module 2 - Assignment](https://maximsaveliev.github.io/Coursera-HTML-CSS-and-Javascript-for-Web-Developers/module2_solution/)
 
 ### Markdown
 
